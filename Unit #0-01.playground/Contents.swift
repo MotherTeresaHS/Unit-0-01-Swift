@@ -13,7 +13,7 @@ class ViewController : UIViewController {
     // this is the main view controller, that will show the UIKit elements
     
     // properties
-    var helloWorldLabel : UILabel!
+    let helloWorldLabel : UILabel = UILabel()
     
     override func viewDidLoad() {
         // UI
@@ -23,7 +23,6 @@ class ViewController : UIViewController {
         view.backgroundColor = #colorLiteral(red: 0.239215686917305, green: 0.674509823322296, blue: 0.968627452850342, alpha: 1.0)
         self.view = view
         
-        helloWorldLabel = UILabel()
         helloWorldLabel.text = "Hello, World!"
         view.addSubview(helloWorldLabel)
         helloWorldLabel.translatesAutoresizingMaskIntoConstraints = false
